@@ -1,0 +1,6 @@
+<!doctype html><meta charset="utf-8"><title>Tiny GPT</title><h1>Tiny GPT from scratch</h1><p>A small character-level GPT implemented in PyTorch without pretrained models or built-in Transformer layers.</p><h2>Run it</h2><pre>uv sync
+uv run python prepare.py
+uv run python check_model.py
+uv run python train.py --overfit-check
+uv run python train.py --steps 2000
+uv run python generate.py "Alice was " --tokens 300</pre><p>The code selects Apple MPS, CUDA, or CPU automatically. It is an educational text generator.</p>
